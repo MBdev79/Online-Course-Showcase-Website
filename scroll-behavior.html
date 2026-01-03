@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smooth scroll</title>
+	<style>
+		html{
+			scroll-behavior: smooth;
+		}
+
+		#first{
+			height: 800px;
+			background-color: violet;
+		}
+
+		#second{
+			height: 800px;
+			background-color: gold;
+		}
+	</style>
+</head>
+<body>
+	<h1>Smooth scroll</h1>
+
+	<section id="first">
+		<h2>section 1</h2>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, illo in illum.</p>
+	  <a href="#second">Go down</a>
+	</section>
+
+	<section id="second">
+		<h2>section 1</h2>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, illo in illum.</p>
+	  <a href="#first"> Go up</a>
+	</section>
+</body>
+</html>

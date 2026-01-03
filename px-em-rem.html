@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unità di misura HTML</title>
+	<style>
+		/*
+			N.B.: 16px è la grandezza di default, se non la definiamo diversamente.
+
+			1em = 16px
+		*/
+
+		body{
+			font-size: 12px;
+		}
+
+		/* esempio con em */
+		.padre{
+			font-size: 13px;
+		}
+
+		.figlio{
+			font-size: 0.7em;
+		}
+
+
+		/* esempio con rem */
+		.madre{
+			font-size: 10px;
+		}
+
+		.figlia{
+			font-size: 1.5rem;
+		}
+	</style>
+</head>
+<body>
+<!--
+
+	N.B.: 16px è la grandezza di default, se non la definiamo diversamente.
+
+	1em = 16px
+
+-->
+
+	<div class="padre"><!-- il valore del font-size è: 13px -->
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+		<div class="figlio"><!-- il valore del font-size è: 13 * 1.7 = 22px -->
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+			<div class="figlio"><!-- il valore del font-size è: 22 * 1.7 = 37px -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+			</div>
+
+		</div><!-- figlio -->
+
+	</div><!-- padre -->
+
+
+	<div class="madre">
+		<p>Lorem ipsum, dolor sit amet, consectetur adipisicing.</p>
+		<div class="figlia">
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+			<div class="figlia">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eos aliquam qui corrupti sequi id. </p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

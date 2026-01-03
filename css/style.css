@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+/* custom propreties o variabili css */
+:root{
+	--primary-color: #6c3130;
+	--secondary-color: #af5252;
+	--accent-color: #fe0002;
+	--gray-color: #b9b9bc;
+}
+
+
+body {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* header */
+.top-header{
+	background-color: var(--primary-color);
+	height: 50px;
+}
+
+.logo a, .th-menu a{
+	color: #fff;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+.logo :is(h1, h4){
+	margin-bottom: 0;
+}
+
+.th-menu ul {
+	list-style: none;
+	display: flex;
+}
+
+.th-menu ul li{
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.th-menu ul li::after{
+	content: "\262F";
+	padding: 0 10px;
+	color: #fff;
+}
+
+.th-menu ul li:last-child::after{
+	content: none;
+}
+
+.th-menu a:hover{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+}
+
+nav.navbar-light .navbar-nav .nav-link{
+	padding: 5px 25px;
+	font-weight: 700;
+}
+
+nav.navbar-light .navbar-nav .nav-link:hover{
+	color: var(--accent-color);
+}
+
+nav.navbar-light .navbar-nav .nav-link:last-child{
+	padding-right: 0;
+}
+
+/* slider */
+.slider{
+	width: 100%;
+	height: 595px;
+	background: url(../img/slider-bg.jpg) center right no-repeat #666;
+	display: table;
+}
+
+.slider .img-container{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* main content */
+h3.section-title{
+	font-weight: bold;
+	text-align: center;
+	color: var(--secondary-color);
+	margin-top: 50px;
+}
+
+span i{
+	display: block;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+.sub-title :is(h2, p){
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.company-description{
+	margin-bottom: 55px;
+}
+
+.company-description p{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.courses-overview{
+	height: 230px;
+	background: url(../img/sushi-bg.png) center no-repeat var(--primary-color);
+	/*position: relative;*/
+	margin-bottom: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.courses-btn{
+	width: 300px;
+	height: 75px;
+	text-align: center;
+	line-height: 75px;
+	text-decoration: none;
+	border-radius: 20px;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	background: none;
+	color: #fff;
+	transition: background 0.3s, color 0.3s;
+}
+
+.courses-btn:hover{
+	background: rgba(255, 255, 255, 0.7);
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+.skills{
+	margin-bottom: 55px;
+}
+
+.skill-feature{
+	border: 2px solid var(--gray-color);
+	border-radius: 20px;
+	padding: 0 25px;
+	text-align: center;
+	color: var(--gray-color);
+	/*height: 400px;*/
+	transition: border-color 0.2s, color 0.2s;
+}
+
+.skill-feature:hover{
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+	cursor: pointer;
+}
+
+.feat-img{
+	font-size: 65px;
+	margin: 35px 0 25px 0;
+}
+
+.feat-title{
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.feat-txt{
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 25px 0;
+	text-align: left;
+}
+
+/* footer */
+
+footer{
+	background: var(--primary-color);
+	padding: 50px 0 20px 0;
+}
+
+.ft-menu a{
+	color: #fff;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+.social{
+	list-style: none;
+	display: flex;
+}
+
+.social li{
+	margin-left: 40px;
+	background: none;
+	text-align: center;
+}
+
+.social li a{
+	line-height: 43px;
+	display: block;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+}
+
+.social li a i{
+	font-size: 20px;
+}
+
+.social li:hover a i{
+	color: var(--primary-color);
+	transition: color 0.3s;
+}
+
+.social li a:hover{
+	background: #fff;
+	transition: background 0.3s;
+}
+
+/* back to top! */
+#back-to-top{
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	color: var(--accent-color);
+	font-size: 35px;
+	transition: color 0.2s, transform 0.3s;
+}
+
+#back-to-top:hover{
+	color: #333;
+	transform: rotate(360deg);
+}
+
+
+/* Courses Page */
+
+.bg-transp{
+	background: rgba(255, 255, 255, 0.75);
+	border-radius: 20px;
+}
+
+.disc-btn-container{
+	position: relative;
+}
+
+.disc-btn{
+	margin: 35px 0;
+	width: 100%;
+	height: 70px;
+	font-size: 24px;
+	border: 2px solid var(--primary-color);
+}
+
+.disc-btn:hover{
+	background-color: var(--primary-color);
+}
+
+.tag-icon{
+	position: absolute;
+	top: 5px;
+	right: -25px;
+	width: 60px;
+	height: 60px;
+	background-color: var(--primary-color);
+	border-radius: 50%;
+}
+
+.tag-icon i{
+	position: absolute;
+	top: 15px;
+	right: 16px;
+	font-size: 25px;
+	color: #fff;
+}
+
+.disc-course{
+	border-color: var(--primary-color);
+	position: relative;
+}
+
+.disc-course:hover::before{
+	content: "€ 120";
+	position: absolute;
+	font-size: 35px;
+	left: 50%;
+	color: #fff;
+	display: block;
+	text-align: center;
+	margin-left: -56px;
+	line-height: 5em;
+	z-index: 1;
+}
+
+.disc-course:nth-child(2):hover::before{
+	content: "€ 250";
+}
+
+.disc-course:nth-child(3):hover::before{
+	content: "€ 550";
+}
+
+.disc-course:nth-child(4):hover::before{
+	content: "€ 750";
+}
+
+.disc-course:hover::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(254, 0, 2, 0.5);
+}
+
+.course-title{
+	border-bottom: 2px solid var(--gray-color);
+	padding-bottom: 5px;
+	margin: 60px 0;
+}
+
+.course-title h3{
+	text-transform: capitalize;
+	line-height: 40px;
+	padding-bottom: 10px;
+	color: var(--primary-color);
+}
+
+.stars{
+	margin-bottom: 10px;
+}
+
+.load-more-btn{
+	display: block;
+	margin: 40px auto;
+	font-size: 18px;
+	color: var(--primary-color);
+	height: 50px;
+	width: 200px;
+	text-transform: uppercase;
+	background:none;
+	border-radius: 7px;
+	border: 2px solid var(--primary-color);
+	transition: background 0.2s, color 0.2s;
+}
+
+.load-more-btn:hover{
+	background: var(--primary-color);
+	color: #fff;
+}
+
+/* CONTACT page */
+.map-container iframe{
+	width: 100%;
+}
+
+.lead{
+	font-size: 14px;
+}
